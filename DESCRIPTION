@@ -1,0 +1,12 @@
+Package: dnase2tf
+Type: Package
+Title: finds footprint candidates from the DNase-I seq data.
+Version: 1.0.1
+Date: 2017-10-26
+Author: Songjoon Baek
+Maintainer: Songjoon Baek <sojbaek@users.sourceforge.net>
+Description: More about what it does (maybe more than one line)
+Depends: parallel, data.table, hash, Rsamtools
+License: GNU General Public License, v 3.0
+NeedsCompilation: yes
+Packaged: 2017-10-26 14:30:47 UTC; baeks

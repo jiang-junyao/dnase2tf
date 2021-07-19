@@ -1,0 +1,16 @@
+#PKG_CFLAGS=-Ibamtools/include 
+#PKG_CPPFLAGS=-Ibamtools/include
+#PKG_LIBS=-Wl,-rpath,bamtools/lib -Lbamtools/lib  -lbamtools
+#PKG_LIBS=-Wl,-rpath,${R_PACKAGE_DIR}/libs/ -Lbamtools/lib  -lbamtools
+#PKG_LIBS+=-L"${R_PACKAGE_DIR}/libs/"
+
+.PHONY: all
+
+all: $(SHLIB) 
+
+$(SHLIB): readDinuc.so splitregions4c.so
+
+readDinuc.so: readDinuc.cpp
+
+splitregions4c.so: splitregions4c.c stat.cpp
+ 

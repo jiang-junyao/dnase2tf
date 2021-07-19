@@ -1,0 +1,11 @@
+#Import required packages
+
+exportPattern("^[[:alpha:]]+")
+
+# Load dynamic libraries (shared object files)
+
+useDynLib(dnase2tf)
+#useDynLib(readDinuc)
+
+#Export functions defind in R code
+export(dnase2tf)
